@@ -11,8 +11,6 @@ inputs:
 - name: concourse-branch-manager
 - name: git-branches
 - name: template-repo
-- name: config-repo
-- name: credentials-repo
 
 params:
   CONCOURSE_URL: null
