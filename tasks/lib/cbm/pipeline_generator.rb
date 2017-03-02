@@ -137,7 +137,7 @@ module Cbm
     end
 
     def create_resource_types_from_template(binding_class, template_file)
-      return '' unless template_file
+      return '' if template_file.empty?
       template = open(template_file).read
       erb_binding = binding_class.new
       erb_binding.uri = git_uri
